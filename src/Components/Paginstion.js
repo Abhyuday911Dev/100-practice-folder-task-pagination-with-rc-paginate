@@ -25,7 +25,8 @@ const Paginstion = () => {
     // }, []);
     useEffect(() => {
         dispatch(getImagesAsync());
-    },[]);
+
+    }, [dispatch]);
     const updatePage = p => {
         console.log("update page called");
         setCurrentPage(p);
